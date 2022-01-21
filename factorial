@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+    int n,i,f; //we will be using n as the number, i as the counter, and f as the actual fact//
+    f=1; //just so the fact doesn't start with 0//
+    i=1; //we will be starting from 1 and up to n, that's why we initiated it with 1//
+    printf("Enter a Number to Find Factorial: ");
+    scanf("%d",&n);
+    while(i<=n) //the loop stops when i reaches n//
+    {
+        f*=i; // this is just pretty much the definition of a factoriel//
+        i++; //i keeps going up by one until it reaches the n that the user has input//
+    }
+    printf("The Factorial of %d is : %d",n,f);
+    return 0;
+}
